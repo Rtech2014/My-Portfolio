@@ -1,0 +1,104 @@
+/*Import Fonts*/
+@import 'https://fonts.googleapis.com/css?family=Cuprum';
+@import 'https://fonts.googleapis.com/css?family=Poiret+One';
+/*Importing flip css*/
+@import "img-flip.css";
+
+/*Universal selector*/
+* {
+  font-family: 'Cuprum', sans-serif;
+}
+
+/*Logo*/
+.title-logo {
+  margin-top: 20px
+}
+
+/*Name Header*/
+.name-header {
+  font-family: 'Poiret One', cursive;
+  margin: 40px 15px 8px;
+}
+
+/*Skill*/
+.skill {
+  margin: 8px 15px 5px;
+}
+
+/*Header line*/
+.heading-line {
+  border: .1em solid #9fc;
+}
+
+/*Banner Shadow*/
+#box {
+  background: #096;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin: 30px auto;
+  padding: .01em .01em;
+}
+
+#box:before, #box:after {
+  bottom: 15px;
+  background: rgba(#000,.7);
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  content: "";
+  left: 10px;
+  position: absolute;
+  max-width: 300px;
+  top: 80%;
+  transform: rotate(-3deg);
+  width: 50%;
+  z-index: -1;
+}
+
+#box:after {
+  left: auto;
+  right: 10px;
+  transform: rotate(3deg);
+}
+/*Project Button*/
+.btn-xlarge {
+  border-radius: 0px;
+  background: #063;
+  color: white;
+  margin: 10px 0px;
+}
+
+.btn-xlarge:hover {
+  color: #9fc;
+}
+
+/*Feature work line break*/
+.work-linebreak {
+  border: .1em solid #9fc;
+  float: left;
+  margin: -3px 0px 20px 0px;
+  width: 164px;
+}
+
+/*modal style*/
+.modal-backdrop {
+  background-color:  #174;
+}
+
+.modal-content {
+  background-color: #0e7c3f;
+  color: #cfc;
+}
+
+/*link styling*/
+a {
+  color: #cfc;
+}
+
+a:hover {
+  color: #cfc;
+}
+.project-link {
+	color: #174;
+}
+.project-link:hover {
+	color: #ccc;
+}

@@ -1,0 +1,53 @@
+/*Thumbnail Image Flip*/
+.flip3d {
+  border: 1px solid #a6d290;
+  background: #a6d290;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  -webkit-perspective: 1000;
+}
+.flip3d:hover .flipper, .flip3d.hover .flipper {
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.flip3d, .front, .back {
+  height: 260px;
+  width: 100%;
+}
+
+.flipper {
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+  position: relative;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  left: 0;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  -o-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
