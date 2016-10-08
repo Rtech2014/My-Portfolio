@@ -68,10 +68,10 @@
 
 /*Project Button*/
 .btn-xlarge {
-  border-radius: 0px;
+  border-radius: 0;
   background: #063;
   color: white;
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 .btn-xlarge:hover {
@@ -82,7 +82,7 @@
 .work-linebreak {
   border: .1em solid #9fc;
   float: left;
-  margin: -3px 0px 20px 0px;
+  margin: -3px 0 20px 0;
   width: 164px;
 }
 
