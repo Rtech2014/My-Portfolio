@@ -1,12 +1,12 @@
 /*Import Fonts*/
-@import 'https://fonts.googleapis.com/css?family=Cuprum';
-@import 'https://fonts.googleapis.com/css?family=Poiret+One';
+@import "https://fonts.googleapis.com/css?family=Cuprum";
+@import "https://fonts.googleapis.com/css?family=Poiret+One";
 /*Importing flip css*/
 @import "img-flip.css";
 
 /*Universal selector*/
 * {
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", sans-serif;
 }
 
 /*Logo*/
@@ -16,7 +16,7 @@
 
 /*Name Header*/
 .name-header {
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
   margin: 40px 15px 8px;
 }
 
@@ -39,7 +39,8 @@
   padding: .01em .01em;
 }
 
-#box:before, #box:after {
+#box:before,
+#box:after {
   bottom: 15px;
   background: rgba(#000,.7);
   box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
@@ -58,6 +59,13 @@
   right: 10px;
   transform: rotate(3deg);
 }
+
+/*thumbnail*/
+.img-project {
+  height: 256px;
+  width: 100%;
+}
+
 /*Project Button*/
 .btn-xlarge {
   border-radius: 0px;
@@ -100,5 +108,13 @@ a:hover {
 	color: #174;
 }
 .project-link:hover {
-	color: #ccc;
+	color: #678;
+}
+/*Footer*/
+.mail-link {
+  color:  #174;
+}
+
+.mail-link:hover {
+  color: #555;
 }
